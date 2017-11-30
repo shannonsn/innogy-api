@@ -1,0 +1,17 @@
+{
+  "name": "innogy_project",
+  "version": "1.0.0",
+  "description": "innogy code challenge",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "author": "shannon",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "express": "^4.16.2",
+    "mongoose": "^4.13.5",
+    "morgan": "^1.9.0"
+  }
+}
