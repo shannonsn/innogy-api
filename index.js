@@ -12,6 +12,7 @@ DatabaseConnect();
 // required routes
 const plumberBooking = require("./routes/plumberBooking");
 const registerPlumber = require("./routes/registerPlumber");
+const allplumbers = require('./routes/allplumbers');
 
 app.use(bodyParser.urlencoded({
     extended: false
@@ -34,7 +35,7 @@ app.use(function(req, res, next) {
 
 app.use('/api/plumber', allplumbers);
 app.use('/api/plumber', registerPlumber);
-app.use('/api/', plumberBooking)
+app.use('/api', plumberBooking)
 
 
 var port = process.env.PORT || 7070;
