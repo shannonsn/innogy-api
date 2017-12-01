@@ -3,7 +3,7 @@ const express = require('express');
 const router = express.Router();
 
 
-app.get('/api/allplumbers', function(req, res) {
+app.get('/api/plumber', function(req, res) {
 
     plumberModel.find({}, function(err, result) {
         if (err) {
