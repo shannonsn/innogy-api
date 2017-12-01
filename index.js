@@ -32,6 +32,7 @@ app.use(function(req, res, next) {
 //     res.json({ code })
 // })
 
+app.use('/api/plumber', allplumbers);
 app.use('/api/plumber', registerPlumber);
 app.use('/api/', plumberBooking)
 
